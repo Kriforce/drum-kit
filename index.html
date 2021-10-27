@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sound Board</title>
+</head>
+
+<body>
+    <div class="divkeys">
+        <audio data-key="65" id="car0" src="Sound/A-car.wav">
+            <div data-key="65" class="key"></div>
+        </audio>
+        <audio data-key="83" id="car1" src="Sound/S-car.wav">
+            <div data-key="83" class="key"></div>
+        </audio>
+        <audio data-key="68" id="car2" src="Sound/D-car.wav">
+            <div data-key="68" class="key"></div>
+        </audio>
+        <audio data-key="70" id="car3" src="Sound/F-car.wav">
+            <div data-key="70" class="key"></div>
+        </audio>
+        <audio data-key="71" id="car4" src="Sound/G-car.wav">
+            <div data-key="71" class="key"></div>
+        </audio>
+        <audio data-key="72" id="car5" src="Sound/H-car.wav">
+            <div data-key="72" class="key"></div>
+        </audio>
+        <audio data-key="74" id="car6" src="Sound/J-car.wav">
+            <div data-key="74" class="key"></div>
+        </audio>
+        <audio data-key="75" id="car7" src="Sound/K-car.wav">
+            <div data-key="75" class="key"></div>
+        </audio>
+        <audio data-key="76" id="car8" src="Sound/L-car.wav">
+            <div data-key="76" class="key"></div>
+        </audio>
+
+        <br>
+        <button id="buttons"></button>
+
+        <br>
+        <button class="btn" onclick="turnLights()">смена картинки</button>
+        <!--Вместо светлой/тёмной темы -->
+    </div>
+
+
+    <script>
+        function turnLights() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+
+    <script src="js/sounds.js"></script>
+    <script src="js/playlist.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+.dark-mode {
+  background: url('../img/night.jpg') top;
+  background-size: cover;
+}
+
+html {
+  font-size: 12px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url('../img/day.jpg') top;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.btn {
+  background-color: rgb(184, 119, 119);
+  border-radius: 5px;
+  border-color:white;
+  color: #fff;
+  margin: 1rem;
+  padding: 1.5rem 3rem;
+  font-size: 1.2rem;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.btn:hover {
+  border-color:black;
+  background-color: rgb(119, 20, 20);
+}
+
+#buttons {
+  background-color:rgba(0, 0, 0, 0);
+  margin: 0;
+  padding: 0;
+  border: 2px solid rgba(0, 0, 0, 0);
+}
